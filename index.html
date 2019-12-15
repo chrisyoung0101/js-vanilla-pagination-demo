@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<!-- ??? body onload=""> -->
+<body onload="load()">
+
+    <div class="container-fluid">
+        <div class="table-responsive">
+            <table id="myTable" class="table table-outline tablesorter">
+                <thead>
+                    <tr class="colsGrad">
+                        <th class="header">ID</th>
+                        <th class="header">Name</th>
+                        <th class="header">Company</th>
+                        <th class="header">Email</th>
+                        <th class="header">Phone</th>
+                        <th class="header">Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- ??? no span work too?  -->
+                        <td><span id="_id"></span></td>
+                        <td><span id="name"></span></td>
+                        <td><span id="company"></span></td>
+                        <td><span id="email"></span></td>
+                        <td><span id="phone"></span></td>
+                        <td><span id="address"></span></td>
+                    </tr>   
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div style="text-align:center;">
+        <input type="button" id="first" onclick="firstPage()" value="first" />
+        <input type="button" id="next" onclick="nextPage()" value="next" />
+        <input type="button" id="previous" onclick="previousPage()" value="previous" />
+        <input type="button" id="last" onclick="lastPage()" value="last" />
+    
+    </div>
+    
+
+    <script src="main.js" async defer></script>
+</body>
+
+</html>
